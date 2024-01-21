@@ -1,11 +1,8 @@
 const a = document.querySelectorAll(".set button");
-// const my_audio = document.querySelectorAll("#my-audio audio")
-// console.log(my_audio );
-// my_audio.forEach((e)=>{
-//     e.addEventListener("play",(e)=>{
-//           console.log(i);
-//     })
-// })
+const year = document.querySelector('#year');
+year.textContent=new Date().getFullYear()
+year.style.color = "red"
+year.style.fontSize= "bold"
 document.addEventListener("keydown", (e) => {
   makeSound(e.key);
   buttonAnimation(e.key);
